@@ -43,6 +43,7 @@ if grep -q 'tar' ~/.bashrc; then
             ;;
     esac
 else
-    # If 'tar' is not found, display a message
-    echo "'tar' not found in .bashrc."
+    # If 'tar' is not found, run add_tar_function.sh to add the tar function
+    echo "'tar' not found in .bashrc, adding tar function now."
+    ./add_tar_function.sh
 fi
